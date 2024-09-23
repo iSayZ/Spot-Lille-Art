@@ -1,0 +1,174 @@
+.rank-container {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+}
+
+.classement-title {
+  text-align: center;
+}
+
+.rank-display-columns {
+  display: flex;
+  flex-direction: column;
+}
+
+.rank-explain-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  box-shadow: var(--shadow-container);
+  border-radius: 1rem;
+  padding: 1rem;
+  background-color: aliceblue;
+  margin-bottom: 1rem;
+}
+
+.points-explain {
+  padding-bottom: 2rem;
+}
+
+.rank-boxes {
+  background-color: aliceblue;
+  border: 1px solid #6092c8;
+  height: 4rem;
+  border-radius: 1rem;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0 0.5rem;
+  margin: 0.5rem 0;
+  overflow: hidden;
+  font-weight: 600;
+  width: 90vw;
+}
+
+.thead-rank-boxes {
+  margin-bottom: 0;
+}
+
+.user-img-ranking {
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: var(--shadow-container);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.user-img-ranking img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.td-pseudo {
+  width: 40%;
+}
+
+.img-coin {
+  width: 1rem;
+  padding: 0 0.2rem;
+}
+
+.td-points {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.badge-info {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.pagination {
+  display: flex;
+  align-items: center;
+}
+
+/************************** DESKTOP VERSION **************************/
+@media screen and (min-width: 768px) {
+  .rank-display-columns {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: flex-start;
+    justify-content: space-evenly;
+  }
+
+  .rank-container {
+    padding-left: 5rem;
+    padding: 1.5rem;
+  }
+  .classement-title {
+    width: 43vw;
+    text-align: center;
+  }
+
+  .rank-explain-box {
+    box-shadow: none;
+    border-radius: 0;
+    padding: 0rem;
+    background-color: transparent;
+    margin: 0;
+  }
+
+  .rank-explain {
+    box-shadow: var(--shadow-container);
+    border-radius: 1rem;
+    padding: 2rem;
+    background-color: aliceblue;
+  }
+
+  .rank-explain-box {
+    margin-top: 2.2rem;
+  }
+
+  .rank-box {
+    width: 50%;
+  }
+
+  .rank-boxes {
+    width: 40vw;
+  }
+
+  .ranking-pagination .rank-box {
+    height: 80vh;
+  }
+
+  .td-position {
+    width: 7%;
+  }
+
+  .td-pseudo {
+    width: 33%;
+  }
+
+  .td-img {
+    width: 20%;
+  }
+
+  .td-points {
+    width: 15%;
+  }
+
+  .td-badge {
+    width: 10%;
+  }
+
+  .ranking-pagination {
+    height: calc(100vh - 15vh);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+}

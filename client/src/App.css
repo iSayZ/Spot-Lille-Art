@@ -1,0 +1,178 @@
+:root {
+  --primary-font: "Amsterdam";
+  --secondary-font: "Quicksand";
+  --font-size: 16px;
+  --white: #f8f8f8;
+  --black: #1a1616;
+  --breakpoint-small: 576px;
+  --breakpoint-medium: 768px;
+  --shadow-container: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  --fullHeightInVH: 100vh;
+}
+/* à utiliser pour le breakpoint
+@media screen and (min-width: 768px) */
+@font-face {
+  font-family: "Amsterdam";
+  src: url("/assets/fonts/amsterdam.ttf") format("truetype");
+}
+.quicksand {
+  font-family: "Quicksand", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+* {
+  margin: 0;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--secondary-font);
+  background-color: var(--white);
+  color: var(--black);
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+  display: block;
+}
+.main-container {
+  height: calc(100vh - 18vh);
+  overflow: auto;
+}
+/* Bouton par défaut, modifier le background-image pour la couleur du bouton. */
+.btn {
+  background-image: linear-gradient(#0dccea, #0d70ea);
+  border: 0;
+  border-radius: 4px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  font-family: var(--secondary-font);
+  font-size: 0.5em;
+  padding: 0.6rem 1rem;
+  text-align: center;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+.btn:hover {
+  opacity: 0.8;
+  transition: 0.3s;
+}
+
+.btn:disabled {
+  opacity: 0.6;
+}
+/* Input par défaut */
+.input-default {
+  background: 0;
+  border: 0;
+  outline: none;
+  width: 40vw;
+  max-width: 400px;
+  font-size: 0.7em;
+  transition: padding 0.3s 0.2s ease;
+}
+.input-default:focus {
+  padding-bottom: 5px;
+}
+.input-default:focus + .line:after {
+  transform: scaleX(1);
+}
+.field {
+  position: relative;
+}
+.field .line {
+  width: 100%;
+  height: 3px;
+  position: absolute;
+  bottom: -8px;
+  background: #bdc3c7;
+}
+.field .line:after {
+  content: " ";
+  position: absolute;
+  float: right;
+  width: 100%;
+  height: 3px;
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+  background: #0dccea;
+}
+
+/* Loader de chargement */
+
+.loader {
+  width: 48px;
+  height: 48px;
+  border: 3px solid #ffffff;
+  border-radius: 50%;
+  display: inline-block;
+  position: relative;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+}
+
+.loader::after {
+  content: "";
+  box-sizing: border-box;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  border: 3px solid;
+  border-color: #e47520 transparent;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/************************DESKTOP VERSION****************/
+
+@media screen and (min-width: 768px) {
+  html,
+  body {
+    height: 100%;
+    margin: 0;
+  }
+
+  body {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .main-container {
+    margin-bottom: 0;
+    margin-left: 30vh;
+    margin-top: 4rem;
+    min-height: calc(100vh - 4rem);
+    overflow: auto;
+    padding: 0;
+  }
+
+  .input-default {
+    width: 25vw;
+  }
+}

@@ -1,0 +1,11 @@
+.artworksReported-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  height: calc(100vh - 18vh);
+}
+
+.no-artworks-reported {
+  display: flex;
+  align-items: center;
+}

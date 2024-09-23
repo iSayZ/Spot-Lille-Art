@@ -1,0 +1,35 @@
+.table-global {
+  border: 1px solid black;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.table-title {
+  border: 1px solid black;
+  border-collapse: collapse;
+  padding: 0 0.3rem;
+}
+
+.table-info {
+  border: 1px solid black;
+  border-collapse: collapse;
+  padding: 0.3rem;
+}
+
+.table-avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  box-shadow: var(--shadow-container);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.table-avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}

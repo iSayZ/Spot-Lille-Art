@@ -1,0 +1,225 @@
+.profile-container {
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.my-profile {
+  box-shadow: var(--shadow-container);
+  background-color: rgb(230, 232, 234);
+  border-radius: 1rem;
+  padding: 0.8rem;
+  margin: 1rem;
+}
+
+.top-profile {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.img-profile {
+  display: flex;
+  flex-direction: column;
+}
+
+.image-profile {
+  overflow: hidden;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 10rem;
+  height: 10rem;
+  box-shadow: var(--shadow-container);
+  background-color: var(--white);
+  margin-bottom: 0.5rem;
+}
+
+.image-profile img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.pseudo-profile {
+  text-align: center;
+}
+
+.points .img-coin {
+  width: 1rem;
+  height: 1rem;
+  margin-left: 0.3rem;
+}
+
+.points {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.edit-profile {
+  height: 4.5vh;
+  width: 7.5vw;
+}
+
+.level-points {
+  box-shadow: var(--shadow-container);
+  background-color: rgb(196, 225, 250);
+  border-radius: 0.4rem;
+  height: auto;
+  padding: 0.4rem;
+  text-align: center;
+  width: 5rem;
+}
+
+.points-edit-mobile {
+  height: 30vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.info-profile {
+  box-shadow: var(--shadow-container);
+  background-color: rgb(237, 238, 238);
+  border-radius: 1rem;
+  font-size: 1.2rem;
+  line-height: 1.8rem;
+  padding: 0.5rem;
+  padding-left: 1rem;
+  margin-top: 1rem;
+}
+
+.my-artworks {
+  display: flex;
+}
+
+.my-artworks .artwork-card {
+  max-width: 27vw;
+  max-height: 27vw;
+}
+
+.my-artworks .artwork-info {
+  height: 1.5rem;
+  font-size: 0.8rem;
+}
+
+.artworks-profile {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.title-my-artworks,
+.points-edit-desktop {
+  display: none;
+}
+
+.btn-delete-account {
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+  box-shadow: none;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.user-artworks {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.btn-see-more-less {
+  font-size: 1rem;
+}
+
+@media screen and (min-width: 1024px) {
+  .profile-container {
+    height: auto;
+  }
+
+  .my-profile {
+    display: flex;
+    justify-content: space-around;
+    margin: 2rem;
+    margin-bottom: 0;
+    padding: 1.5rem;
+  }
+
+  .image-profile {
+    width: 15rem;
+    height: 15rem;
+  }
+
+  .info-profile {
+    width: 30vw;
+    font-size: 1.3rem;
+    line-height: 3.5rem;
+    padding-left: 2rem;
+    box-shadow: none;
+  }
+
+  .info-desktop {
+    box-shadow: var(--shadow-container);
+    border-radius: 1rem;
+    background-color: rgb(237, 238, 238);
+    display: flex;
+  }
+
+  .points-edit-desktop {
+    width: 6rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-right: 1.5rem;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    align-items: flex-end;
+  }
+
+  .edit-profile-desktop {
+    width: 2.5rem;
+    align-self: end;
+    height: 4vh;
+    width: 2.2vw;
+    padding: 0.2rem;
+  }
+
+  .my-artworks {
+    box-shadow: var(--shadow-container);
+    background-color: rgb(230, 232, 234);
+    border-radius: 1rem;
+    padding: 1.5rem;
+    margin: 2rem;
+  }
+
+  .title-my-artworks {
+    display: block;
+    text-align: center;
+  }
+
+  .my-artworks {
+    flex-direction: column;
+  }
+
+  .my-artworks .artworks-profile {
+    margin: 0 auto;
+    display: flex;
+  }
+
+  .my-artworks .artwork-card {
+    width: 16.5vw;
+    height: 16.5vw;
+  }
+
+  .points-edit-mobile {
+    display: none;
+  }
+}

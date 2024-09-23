@@ -1,0 +1,11 @@
+.artworksnv-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  height: calc(100vh - 18vh);
+}
+
+.no-artworks-waiting {
+  display: flex;
+  align-items: center;
+}

@@ -1,0 +1,132 @@
+.contact-container {
+  height: 93%;
+  padding: 1rem;
+}
+.contact-formulaire {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+  font-size: 1.2rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+.contact-formulaire button {
+  font-size: 0.8em;
+}
+.contact-img {
+  display: none;
+}
+.help {
+  position: relative;
+  top: 0;
+  margin-top: 1.5em;
+  text-align: center;
+  font-size: 0.3em;
+}
+.reclamations {
+  width: 100%;
+  height: 15em;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left: auto;
+  margin-right: auto;
+  text-decoration: underline;
+}
+.field {
+  margin-bottom: 2em;
+  margin-top: 1em;
+  font-size: 0.7em;
+  margin-left: 0.8em;
+  margin-right: 1em;
+}
+
+#confidentialite {
+  margin-left: 0.3rem;
+}
+
+.field.confidentiality {
+  margin-bottom: 1rem;
+}
+
+.state-statut {
+  margin-bottom: 1rem;
+  color: #34c22f;
+}
+
+.state-statut.error {
+  color: red;
+}
+
+textarea {
+  font-family: var(--secondary-font);
+  font-weight: 500;
+}
+
+/**************************DESKTOP VERSION****************************/
+
+@media screen and (min-width: 1024px) {
+  .contact-container {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+  }
+
+  .contact-title {
+    display: flex;
+    font-family: var(--secondary-font);
+    font-size: 2rem;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 0.5rem;
+  }
+
+  .contact-formulaire {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    box-shadow: none;
+    width: 50%;
+  }
+
+  .contact-img-container {
+    width: 50%;
+    object-fit: cover;
+  }
+
+  .contact-img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .help {
+    position: relative;
+    top: 2em;
+    margin-top: 5em;
+    margin-bottom: 5em;
+    text-align: center;
+    font-size: 8px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .reclamations {
+    width: 100%;
+    height: 50em;
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
+    margin-left: auto;
+    margin-right: auto;
+    text-decoration: underline;
+  }
+  .field {
+    margin-bottom: 1em;
+    margin-top: 1em;
+    font-size: 0.7em;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

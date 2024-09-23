@@ -1,0 +1,29 @@
+.top3-container {
+  display: flex;
+  justify-content: center;
+}
+
+.top3-container .rank-boxes {
+  height: 2.5rem;
+  width: 90vw;
+  border-radius: 0.4rem;
+  margin: 0.2rem 0;
+}
+
+.top3-container .user-img-ranking {
+  width: 2rem;
+  height: 2rem;
+}
+
+.td-points-homepage {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  min-width: 5rem;
+  justify-content: flex-end;
+}
+
+.td-pseudo.home {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

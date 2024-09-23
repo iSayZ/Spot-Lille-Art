@@ -1,0 +1,53 @@
+.form-artwork-container {
+  height: calc(100vh - 9vh);
+}
+
+.form-artwork {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.camera-picture {
+  max-width: 90vw;
+  max-height: 90vw;
+  height: auto;
+  overflow: hidden;
+  border-radius: 5px;
+  margin: 0 auto;
+  box-shadow: var(--shadow-container);
+  position: relative;
+  box-sizing: border-box;
+}
+
+.return-camera-btn {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+}
+
+.return-camera-btn:hover {
+  transform: scale(1.1);
+}
+
+.camera-picture img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.input-title-artwork {
+  width: 70vw;
+  max-width: 25rem;
+}
+
+.send-picture-btn {
+  font-size: 1em;
+}
+
+.form-artwork-container .warning {
+  color: red;
+  text-align: center;
+}

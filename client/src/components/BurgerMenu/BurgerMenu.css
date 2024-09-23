@@ -1,0 +1,48 @@
+.burger-menu-container {
+  font-family: var(--primary-font);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  position: fixed;
+  font-size: 2.5rem;
+  letter-spacing: 0.15rem;
+  color: var(--white);
+  background-color: black;
+  opacity: 90%;
+  text-align: center;
+  z-index: 999;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+
+.close-button {
+  position: fixed;
+  right: 0;
+  top: 0;
+}
+
+.img-cross {
+  width: 2rem;
+}
+
+.button-cross {
+  background-color: transparent;
+  border: none;
+  padding: 2em;
+}
+
+.burger-links a:hover {
+  opacity: 0.7;
+  transition: 0.3s;
+}
+
+/*****************************DESKTOP VERSION **************************/
+
+@media screen and (min-width: 768px) {
+  .burger-menu-container {
+    display: none;
+  }
+}

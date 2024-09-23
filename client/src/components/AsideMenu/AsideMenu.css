@@ -1,0 +1,53 @@
+.aside-menu-container {
+  display: none;
+}
+
+/*****************************DESKTOP VERSION **************************/
+
+@media screen and (min-width: 768px) {
+  .aside-menu-container {
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    width: 30vh;
+    font-family: var(--primary-font);
+    font-size: 2.4rem;
+    letter-spacing: 0.15rem;
+    color: var(--black);
+    background-color: aliceblue;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    padding-top: 10vh;
+    z-index: 2;
+  }
+
+  .aside-menu {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-between;
+  }
+
+  .aside-menu a:hover {
+    opacity: 0.5;
+    transition: 0.3s;
+  }
+
+  .aside-menu-top,
+  .aside-menu-bottom {
+    padding: 1rem;
+  }
+
+  .aside-menu-top-admin {
+    padding: 1rem;
+    font-family: var(--secondary-font);
+    font-size: 0.6em;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-weight: 800;
+    gap: 3rem;
+  }
+}

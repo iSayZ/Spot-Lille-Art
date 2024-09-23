@@ -1,0 +1,104 @@
+.artwork-card {
+  width: 40vw;
+  height: 40vw;
+  overflow: hidden;
+  border-radius: 15px;
+  box-shadow: var(--shadow-container);
+  margin: 1rem 0.5rem;
+  position: relative;
+}
+
+.artwork-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.artwork-card img:hover {
+  transform: scale(1.1);
+  transition: 0.5s;
+}
+
+.artwork-info {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.4);
+  color: var(--white);
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.artwork-info h3 {
+  width: 90%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  text-align: center;
+}
+
+.artwork-card .artwork-info.not-validated {
+  top: 0;
+  height: 100%;
+  width: 100%;
+  flex-direction: column;
+  justify-content: space-around;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 0 0.5rem;
+  box-sizing: border-box;
+}
+
+.artwork-card .artwork-info.not-validated h3 {
+  display: none;
+}
+
+#not-validated {
+  color: greenyellow;
+  font-weight: 600;
+  white-space: wrap;
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .artwork-card {
+    width: 16vw;
+    height: 16vw;
+  }
+
+  .artwork-card .artwork-info.not-validated h3 {
+    display: block;
+    white-space: wrap;
+    text-align: center;
+  }
+
+  #not-validated {
+    color: greenyellow;
+    font-weight: 600;
+    white-space: wrap;
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .artwork-card {
+    width: 19vw;
+    height: 19vw;
+    margin: 1rem 0.7rem;
+  }
+
+  .artwork-info {
+    padding: 0.2rem 0;
+  }
+}
+
+@media screen and (min-width: 1500px) {
+  .artwork-card {
+    width: 20vw;
+    height: 20vw;
+  }
+}

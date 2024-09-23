@@ -1,0 +1,83 @@
+.webcam-container {
+  width: 100%;
+  max-width: 100%;
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+  background-color: var(--black);
+}
+
+.webcam-container.full {
+  height: 100vh;
+}
+
+.webcam {
+  width: 93%;
+  height: 89%;
+  position: absolute;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.camera-bottom {
+  width: 100%;
+  height: 15vh;
+  background-color: var(--black);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.camera-btn {
+  background: transparent;
+  border: none;
+}
+
+.exit-picture-btn {
+  position: absolute;
+  top: 0.3rem;
+  right: 0.3rem;
+}
+
+.exit-picture-btn img {
+  height: 60px;
+  width: 60px;
+}
+
+.take-picture-btn {
+  cursor: pointer;
+}
+
+.take-picture-btn img {
+  height: 75px;
+  width: 75px;
+}
+
+.after-picture-btn {
+  position: absolute;
+  bottom: 1rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.after-picture-btn img {
+  width: 60px;
+  height: 60px;
+}
+
+.after-picture-btn button:hover {
+  transform: scale(1.1);
+}
+
+#error-location {
+  color: red;
+  font-size: 1.5em;
+}

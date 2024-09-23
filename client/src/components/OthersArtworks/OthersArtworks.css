@@ -1,0 +1,31 @@
+.others-artworks {
+  display: none;
+}
+
+/********************** DESKTOP VERSION **********************/
+@media screen and (min-width: 768px) {
+  .others-artworks {
+    display: block;
+    padding: 0 1rem;
+  }
+
+  .others-title {
+    font-size: 1.5rem;
+    padding-left: 2.5rem;
+  }
+
+  .img-othersartworks {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .img-othersartworks .artwork-card {
+    width: 10vw;
+    height: 10vw;
+  }
+
+  .img-othersartworks .artwork-info {
+    height: 2rem;
+  }
+}

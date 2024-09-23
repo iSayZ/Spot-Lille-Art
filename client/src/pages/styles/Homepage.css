@@ -1,0 +1,144 @@
+.homepage-container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  gap: 1rem;
+  padding: 1rem 0;
+}
+
+.titles-homepage {
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.artworks-homepage {
+  display: flex;
+  justify-content: space-around;
+}
+
+.artworks-news-homepage .artwork-card {
+  width: 30vw;
+  height: 30vw;
+  margin: 0;
+}
+
+.roadmap-homepage {
+  width: 95%;
+  height: 120px;
+  box-shadow: var(--shadow-container);
+  margin: 0 auto;
+  border-radius: 1rem;
+}
+
+.roadmap-homepage .roadmap-container {
+  padding: 0;
+}
+
+.roadmap-homepage .map {
+  display: block;
+  height: 100%;
+  width: 100%;
+  border-radius: 1rem;
+}
+
+.bottom-desktop-container {
+  display: contents;
+}
+
+.ranking-homepage {
+  display: none;
+}
+
+.badge-homepage {
+  margin: 0.5rem;
+}
+
+.artwork4 {
+  display: none;
+}
+
+/* ************************* DESKTOP VERSION **************************/
+@media screen and (min-width: 768px) {
+  .homepage-container {
+    gap: 0;
+    padding: 0;
+  }
+
+  .titles-homepage {
+    font-size: 2rem;
+    padding-top: 1.5rem;
+    padding-bottom: 1rem;
+  }
+
+  .artworks-homepage {
+    justify-content: space-evenly;
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  .artworks-news-homepage .artwork-card {
+    width: 16vw;
+    height: 16vw;
+  }
+
+  .roadmap-homepage .text-roadmap {
+    display: none;
+  }
+
+  .bottom-desktop-container {
+    display: flex;
+    justify-content: space-evenly;
+    padding-bottom: 2rem;
+  }
+
+  .roadmap-homepage {
+    width: 35vw;
+    height: 20vw;
+  }
+
+  .tbody-ranking {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 20vw;
+  }
+
+  .tbody-ranking .rank-boxes {
+    margin: 0;
+  }
+
+  .ranking-homepage {
+    display: block;
+  }
+
+  .ranking-homepage .rank-boxes {
+    width: 35vw;
+  }
+
+  .ranking-homepage .rank-boxes:first-child {
+    margin-top: 0;
+  }
+
+  .ranking-homepage .rank-container {
+    padding: 0;
+  }
+
+  .top3-mobile {
+    display: none;
+  }
+
+  .artwork4 {
+    display: block;
+  }
+
+  .badge-homepage.home {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .badge-homepage.home {
+    display: block;
+  }
+}

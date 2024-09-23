@@ -1,0 +1,173 @@
+.profile-edit-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+}
+
+.profile-edit-box {
+  width: 90%;
+  box-shadow: var(--shadow-container);
+  background-color: rgb(230, 232, 234);
+  border-radius: 1rem;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.avatar-profile-edit {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 6rem;
+  height: 6rem;
+  border-radius: 50%;
+  box-shadow: var(--shadow-container);
+  margin-bottom: 0.5rem;
+  overflow: hidden;
+  background-color: aliceblue;
+}
+
+.avatar-profile-edit img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.pen-edit {
+  width: 2rem;
+}
+
+.modify-profil-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.modify-profil {
+  display: flex;
+  width: 50%;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+  height: 2rem;
+}
+
+.modify-profil-input {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  height: 4rem;
+  align-items: flex-end;
+  width: 80%;
+}
+
+.modify-profil-input-error {
+  height: 5rem;
+}
+
+.modify-profil-input-pwd {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  width: 50%;
+  height: 2.5rem;
+  align-items: flex-end;
+}
+
+.modify-profil-avatar {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: 7rem;
+}
+
+.button-edit-container {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: var(--white);
+  box-shadow: var(--shadow-container);
+  border-radius: 50%;
+  height: 1.8rem;
+  width: 1.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button-edit-avatar {
+  border: unset;
+  background: unset;
+  color: 666;
+}
+
+.btn-modifications {
+  margin: 1rem;
+  font-size: 0.8rem;
+}
+
+.input-default-edit {
+  font-size: 1rem;
+  width: 60vw;
+}
+
+.pwd-edit .input-default {
+  width: 100%;
+}
+
+.pwd-modify-btn {
+  background: none;
+  color: inherit;
+  border: none;
+  padding-top: 2rem;
+  font: inherit;
+  outline: inherit;
+  display: flex;
+}
+
+.pwd-modify-btn-text {
+  padding-right: 1rem;
+}
+
+.pwd-edit {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+}
+
+.edit-password-pen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 90%;
+}
+
+@media screen and (min-width: 1024px) {
+  .profile-edit-box {
+    width: 40%;
+  }
+
+  .avatar-profile-edit {
+    width: 8rem;
+    height: 8rem;
+  }
+
+  .modify-profil {
+    width: 50%;
+  }
+
+  .modify-profil-avatar {
+    height: 8rem;
+  }
+
+  .edit-password-pen {
+    width: 90%;
+  }
+}

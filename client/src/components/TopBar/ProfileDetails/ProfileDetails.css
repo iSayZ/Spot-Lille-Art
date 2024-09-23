@@ -1,0 +1,64 @@
+.profile-details {
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+  font: inherit;
+  display: flex;
+  align-items: center;
+  font-size: 1.5rem;
+  padding: 0.3rem 0.5rem;
+  height: 100%;
+  border-radius: 5px;
+  position: relative;
+  cursor: pointer;
+}
+
+.profile-details#is-open {
+  background-color: rgba(194, 194, 194, 0.2);
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.profile-details:hover {
+  background-color: rgba(194, 194, 194, 0.2);
+}
+
+.profile-details .profile-picture {
+  border-radius: 50%;
+  overflow: hidden;
+  height: 50px;
+  width: 50px;
+  cursor: pointer;
+  box-shadow: var(--shadow-container);
+  z-index: 2;
+}
+
+.profile-details .profile-picture img {
+  height: 50px;
+  width: 50px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.profile-details .profile-info {
+  margin-left: 1rem;
+  font-size: 0.7em;
+  cursor: pointer;
+}
+
+.profile-details #pseudo {
+  font-weight: 600;
+  margin-right: 1rem;
+}
+
+.profile-details #coin {
+  width: 13px;
+  height: 13px;
+  margin-left: 0.3rem;
+}
+
+.MuiMenuItem-colorNeutral {
+  background-color: blue;
+  color: brown;
+}
