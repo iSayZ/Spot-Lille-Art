@@ -1,87 +1,66 @@
-# template-p3
+<div>
+  <img src="https://www.estrine-alexis.fr/assets/github/Spot-lille-Art-logo.png" alt"Logo Spot Lille Art" height="100" />
+</div>
 
-This project uses Harmonia. Harmonia is a framework meant to serve as a foundation for every project following the React-Express-MySQL stack, as learned in Wild Code School.
-It's pre-configured with a set of tools which'll help students produce industry-quality and easier-to-maintain code, while staying a pedagogical tool.
+> "Participez à la découverte et à la préservation des œuvres de street art à travers la Métropole Européenne de Lille."
 
-## Setup & Use
+<br>
 
-**Windows users:** be sure to run these commands in a git terminal to avoid [issues with newline formats](https://en.wikipedia.org/wiki/Newline#Issues_with_different_newline_formats):
+## 🖼️ Aperçu
 
-```
-git config --global core.eol lf
-git config --global core.autocrlf false
-```
+<div>
+  <a href="https://www.estrine-alexis.fr/assets/github/login-sla.png">
+    <img src="https://www.estrine-alexis.fr/assets/github/login-sla.png" alt="Aperçu map" width="400" />
+  </a>
+  <a href="https://www.estrine-alexis.fr/assets/projects/spot-lille-art/map.png">
+    <img src="https://www.estrine-alexis.fr/assets/projects/spot-lille-art/map.png" alt="Aperçu map" width="400" />
+  </a>
+  <a href="https://www.estrine-alexis.fr/assets/projects/spot-lille-art/artworks.png">
+    <img src="https://www.estrine-alexis.fr/assets/projects/spot-lille-art/artworks.png" alt="Aperçu Artwork page" width="400" />
+  </a>
+  <a href="https://www.estrine-alexis.fr/assets/projects/spot-lille-art/artwork.png">
+    <img src="https://www.estrine-alexis.fr/assets/projects/spot-lille-art/artwork.png" alt="Aperçu Artwork details" width="400" />
+  </a>
+</div>
 
-- In VSCode, install plugins **Prettier - Code formatter** and **ESLint** and configure them
-- Clone this repo, enter it
-- Run command `npm install`
-- Create environment files (`.env`) in both `server` and `client`: you can copy `.env.sample` files as starters (**don't** delete them)
+<br>
 
-### Available Commands
+- [Site de démo en ligne](https://spot-lille-art.utopland.net/)
 
-- `db:migrate` : Run the database migration script
-- `db:seed` : Run the database seed script
-- `dev` : Starts both servers (client + server) in one terminal
-- `dev:client` : Starts the React client
-- `dev:back` : Starts the Express server
-- `lint` : Runs validation tools (will be executed on every _commit_, and refuse unclean code)
+<br>
 
-## FAQ
+## 📜 Description
 
-### Tools
+**Spot Lille Art** est une plateforme participative permettant de référencer, partager et découvrir des œuvres de street art dans la Métropole Européenne de Lille. Ce projet inclut un système de gestion des œuvres via une API connectée à une base de données MySQL. Les utilisateurs peuvent prendre des photos des oeuvres et renseigner leurs informations. Le site propose également un espace administrateur pour gérer les œuvres soumises, les utilisateurs, les signalements d'œuvres recouvertes ainsi que les statistiques globales de l'application.
 
-- _Concurrently_ : Allows for several commands to run concurrently in the same CLI
-- _Husky_ : Allows to execute specific commands that trigger on _git_ events
-- _Vite_ : Alternative to _Create-React-App_, packaging less tools for a more fluid experience
-- _ESLint_ : "Quality of code" tool, ensures chosen rules will be enforced
-- _Prettier_ : "Quality of code" tool as well, focuses on the styleguide
-- _ Airbnb Standard_ : One of the most known "standards", even though it's not officially linked to ES/JS
+<br>
 
-## Deployment with Traefik
+## 🚀 Fonctionnalités
 
-> ⚠️ Prerequisites : You must have installed and configured Traefik on your VPS beforehand.
-> https://github.com/WildCodeSchool/vps-traefik-starter-kit/
+- **Référencement d'œuvres** : Prise de photos et ajout d'œuvres avec localisation en mobile.
+- **Carte interactive** : Localisation des œuvres sur une carte avec des pins via la localisation de l'œuvre.
+- **Système de compte** : Création de compte, gestion de profil, et badges en fonction de l'activité.
+- **Système de points** : Gagnez des points pour chaque œuvre renseignée ou signalée comme recouverte.
+- **Panel administrateur** : Gestion des utilisateurs, validation des œuvres, suivi des signalements et des statistiques globales de l'application.
+- **Sécurité renforcée** : Authentification sécurisée des utilisateurs et protection des routes de l'API pour garantir la confidentialité des données.
+- **Contact via Nodemailer** : Possibilité de contacter l’équipe par mail.
 
-For deployment, you have to go to `secrets` → app `actions` on the github repo to insert via `New repository secret` :
+<br>
 
-- SSH_HOST : IP address of your VPS
-- SSH_USER : SSH login to your VPS
-- SSH_PASSWORD : SSH connection password to your VPS
+## 🛠 Technologies Utilisées
 
-And a public variable from the tab `/settings/variables/actions` :
+![CSS](https://img.shields.io/badge/CSS-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+![React](https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black)
+![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)
+![Express](https://img.shields.io/badge/Express-000000?style=for-the-badge&logo=express&logoColor=white)
+![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
 
-- PROJECT_NAME : the name of the project used to create the subdomain.
+<br>
 
-> ⚠️ Warning : underscores are not allowed. They can cause trouble with the let's encrypt certificate
+## 📞 Contact
 
-Use this same tab to add the other environment variables required for the project if any.
+N’hésitez pas à me contacter pour discuter de projets ou d’opportunités !
 
-Only the server will be accessible. The root path `"/"` will redirect to the dist folder of your client. In order to allow that, please uncomment the line as explained in `server/src/app.js` (Line 102).
-Because the server will also serve the client, the global variable VITE_SERVER_URL will be set with an empty string.
-
-Your url will be ` https://${PROJECT-NAME}.${subdomain}.wilders.dev/`.
-
-### About the database
-
-The database is automaticaly deployed with the name of your repo. During the build of the projet (`docker-entry.sh`), the `node migrate.js` command is executed in the server. If you want to seed automaticaly your database using the `seed.js` script, replace the `cd ./server && node ./bin/migrate.js && node index.js` by `cd ./server && node ./bin/migrate.js && node ./bin/seed.js && node index.js`
-
-### About public assets (pictures, fonts...)
-
-Don't use any public folder on your client. This folder won't be accessible online. You may move your public assets in the `server/public` folder. Prefer [static assets](https://vitejs.dev/guide/assets) when possible.
-
-### About Specific Environment Variables (e.g., Email)
-
-Students should use the template provided in the `*.env.sample*` file as `<PROJECT_NAME><SPECIFIC_NAME>=<THE_VARIABLE>`.
-
-> ⚠️ **Warning:** The `PROJECT_NAME` should match the one used in the Git public variable.
-
-To add it during deployment, follow these 2 steps:
-
-- Add the following variable to the `docker-compose.prod.yml` file (as shown in the example: `PROJECT_NAME_SPECIFIC_NAME: ${PROJECT_NAME_SPECIFIC_NAME}`).
-- Connect to your server via SSH. Open the global `.env` file in Traefik (`nano ./traefik/data/.env`). Add the variable with the correct value and save the file.
-- Afterward, you can initiate automatic deployment. Docker will not refresh during this process.
-
-### About Logs
-
-If you want to access the logs of your online projet (to follow the deployement or to watch any bug error), connect to your VPS (`ssh user@host`).
-Then, go on your specific project and run  `docker compose logs -t -f`.
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/alexis-estrine/) 
+[![Gmail](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:estrine.alexis@gmail.com)
